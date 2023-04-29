@@ -34,6 +34,7 @@ function export_init(){
 function export_init_single(){
   alert('Waiting for your xhr event. Please make a refilter.');
   var btn=document.querySelector('.onc_export_alfredo');
+ document.querySelector('.onc_export_alfredo_single').innerHTML='Waiting Request';
   btn.innerHTML='Exporting.....';
   btn.setAttribute('data-export_init','1');
   btn.setAttribute('data-has_error','0');
@@ -90,6 +91,7 @@ function export_prepare(){
     token=btn.getAttribute('data-token');
     single_page=btn.getAttribute('data-single_page');
     if(single_page==='1'){
+        document.querySelector('.onc_export_alfredo_single').innerHTML='Export Single Table';
       export_finalize(url,btn,token,100)
     }
     else{
