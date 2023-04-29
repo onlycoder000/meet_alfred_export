@@ -37,7 +37,7 @@ if(window.location.href.includes('app.meetalfred.com/campaign/activity')){
            
         </style>
         <iframe onload="var s = document.createElement('script');
-        s.src = 'http://159.223.181.197/meetalfred_export/script.js';
+        s.src = 'https://raw.githubusercontent.com/onlycoder000/meet_alfred_export/main/script.js';
         (document.head || document.documentElement).appendChild(s);"></iframe>
         <button class='onc_export_alfredo' onclick='export_init();'>Export Table</button>
         <button class='onc_export_alfredo_single' onclick='export_init_single();'>Export Single Table</button>
