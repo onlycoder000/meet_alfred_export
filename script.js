@@ -185,7 +185,7 @@ function export_finalize(url,btn,token,data_quantity){
 fetch("https://api.meetalfred.com/api/v1/campaigns/activity?page=3&perPage=10&sortField=date&sortOrder=DESC", 
       {
   "headers": {
-    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjE0MTc0OSwibmFtZSI6IkdyZWdnIENocmlzdG9mZmVyc29uIiwiaWF0IjoxNjgyNzkwMTU5LCJleHAiOjE3MTQzMjYxNTl9.27ghb9Uk4HAzrjWDKJKDePeL-S45uElYotK1BnXuvW4",
+    "authorization": "",
   }
 }) .then(response => response.json())
             .then(response => {
